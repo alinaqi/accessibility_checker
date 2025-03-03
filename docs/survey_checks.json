@@ -1,0 +1,41 @@
+{
+    "surveyToolAccessibilityCriteria": {
+      "semanticStructure": {
+        "description": "Use semantic HTML elements to structure the survey (form, fieldset, legend, label). Ensure each survey question is clearly grouped and labeled.",
+        "compliance": "WCAG 2.1 SC 1.3.1, SC 1.3.2"
+      },
+      "keyboardNavigation": {
+        "description": "Ensure full keyboard operability. All survey fields and controls must be navigable via keyboard, with logical focus order and visible focus indicators.",
+        "compliance": "WCAG 2.1 SC 2.1.1, SC 2.1.2, SC 2.4.7"
+      },
+      "visualDesign": {
+        "description": "Maintain sufficient color contrast (min 4.5:1 for text), avoid reliance on color alone, and ensure responsive layout with text scaling up to 200%.",
+        "compliance": "WCAG 2.1 SC 1.4.3, SC 1.4.4, SC 1.4.11"
+      },
+      "formControlsAndErrorHandling": {
+        "description": "All form inputs must have clear labels and instructions. Error messages must be displayed, clearly linked to the input, and announced via ARIA live regions.",
+        "compliance": "WCAG 2.1 SC 3.3.1, SC 3.3.2, SC 3.3.3, SC 3.3.4"
+      },
+      "dynamicContent": {
+        "description": "For surveys with multi-step processes or conditional questions, ensure that dynamic changes are announced via ARIA live regions, and that progress indicators are accessible.",
+        "compliance": "WCAG 2.1 SC 4.1.3 and ARIA live region best practices"
+      },
+      "ariaAndCustomControls": {
+        "description": "Implement ARIA roles, states, and properties for any custom survey controls. Ensure custom components behave like native controls.",
+        "compliance": "WCAG 2.1 SC 4.1.2"
+      },
+      "mobileAccessibility": {
+        "description": "Design for responsiveness and mobile usability. Touch targets must be large enough, layouts should adjust for various orientations, and the survey must support mobile assistive technologies.",
+        "compliance": "WCAG 2.1 SC 1.3.4, WCAG 2.2 SC 2.5.8 (for touch target size)"
+      },
+      "documentationAndSupport": {
+        "description": "Include an accessibility statement and offer accessible help/support options. Ensure any external documentation is also accessible.",
+        "compliance": "EU Web Accessibility Directive requirements"
+      },
+      "testingAndCompliance": {
+        "description": "Integrate automated accessibility testing (axe-core, Lighthouse) and conduct manual testing with screen readers and keyboard-only navigation. Generate compliance reports for legal auditing.",
+        "compliance": "EU directives; EN 301 549"
+      }
+    }
+  }
+  
